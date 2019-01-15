@@ -34,7 +34,7 @@ public class gc_lab2 {
 		double perim = 2 * (length + width);
 		double vol = (length * width * height);
 		
-		DecimalFormat df = new DecimalFormat("0.00");
+		DecimalFormat df = new DecimalFormat("0,000.00");
 		
 		System.out.println("The area of room " + i + " is " + df.format(area)); 
 		System.out.println("The perimeter of the room " + i + " is " + df.format(perim));
