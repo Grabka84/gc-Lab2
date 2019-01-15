@@ -1,4 +1,5 @@
 package gc_lab2;
+import java.text.DecimalFormat; // import decimal formatter
 import java.util.Scanner; //import scanner package
 
 public class gc_lab2 {
@@ -33,9 +34,11 @@ public class gc_lab2 {
 		double perim = 2 * (length + width);
 		double vol = (length * width * height);
 		
-		System.out.println("The area of room " + i + " is " + area); 
-		System.out.println("The perimeter of the room " + i + " is " + perim);
-		System.out.println("The volume of the room " + i + " is " + vol);
+		DecimalFormat df = new DecimalFormat("0.00");
+		
+		System.out.println("The area of room " + i + " is " + df.format(area)); 
+		System.out.println("The perimeter of the room " + i + " is " + df.format(perim));
+		System.out.println("The volume of the room " + i + " is " + df.format(vol));
 		
 		System.out.println();
 		
